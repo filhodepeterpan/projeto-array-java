@@ -14,11 +14,12 @@ public class Main {
             valor[i] = scan.nextDouble();
         }
         for (int i = 4; i >= 0 ; i--) {
+            System.out.println(String.format("%d \t", i));
             soma += valor[i];
         }
 
         media = soma/5;
 
-        System.out.println(String.format("A média é %f", media));
+        System.out.println(String.format("A média é %.1f", media));
     }
 }
